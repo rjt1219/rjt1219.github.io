@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Antique', serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+header p{
+    color: #444;
+}
+
+header h1{
+    background-color: #fff;
+    padding:10px 0 10px 15%;
+    color: #444;
+}
+
+header ul{
+    padding:10px 0 10px 15%;
+    display: flex;
+    list-style: none;
+    background: #444;
+}
+
+header li{
+    margin-right: 50px;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.inner{
+    padding: 50px 15%;
+}
+
+.inner a, h2 ,h3 ,p{
+    color: #444;
+}
+
+#top{
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    flex: 1;
+    padding-right: 30px;
+}
+
+article:last-child{
+    padding-right: 0;
+}
+
+article img{
+   width: 100%;
+}
+
+article h1{
+    margin: 10px 0;
+    font-size: medium;
+}
+
+article a{
+    display: block;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container img{
+    width: 100%;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+main{
+    width: 70%;
+    padding: 20px;
+}
+
+.main_contents{
+    margin-bottom: 100px;
+}
+
+.main_contents .center{
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.main_contents dl{
+    display: flex;
+    margin: 20px 0 10px;
+}
+
+.main_contents dl dd{
+    margin-left: 20px;
+}
+
+.main_contents p{
+    display: block;
+    width: 90%;
+    margin: 10px auto 20px;
+}
+
+aside{
+    width: 30%;
+    padding-left: 20px;
+}
+
+aside h3{
+    margin: 50px 0;
+    text-align: center;
+}
+
+.prof img{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 45%;
+    border-radius: 90%;
+}
+
+.prof p{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.arc ul{
+    list-style: none;
+}
+
+.arc ul li{
+    padding: 20px;
+    border-top: 1px solid #444;
+}
+
+.arc ul li:last-child{
+    border-bottom: 1px solid #444;
+}
+
+footer{
+    padding: 50px 15%;
+    width: 100%;
+    background-color: #eee;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    flex: 1;
+    padding-right: 100px;
+}
+
+.menu:last-child{
+    padding-right: 0;
+}
+
+.menu .tri{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    padding-left: 1em;
+}
+
+.menu .tri::before{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 0px;
+    height: 0px;
+    border: 0.3em solid transparent;
+    border-left: 0.4em solid #333;
+    content: "";
+}
+
+.menu h3{
+    margin-bottom: 50px;
+}
+
+.menu p{
+    margin-bottom: 10px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li{
+    padding: 20px;
+    border-top: 1px solid #444;
+}
+
+.menu ul li:last-child{
+    border-bottom: 1px solid #444;
+}
+
+footer a{
+    color: #444;
+    text-decoration: none;
+}
+
+footer small{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+@media screen and (max-width:600px){
+
+    header h1{
+        padding-left: 20px;
+    }
+    
+    header ul{
+        padding:10px 0 10px 20px;
+    }
+
+    header li{
+        margin-right:20px;
+    }
+    
+    .inner{
+        padding: 50px 20px;
+    }
+    
+
+    #top{
+        width: 100%;
+        margin: 100px auto;
+        display: block;
+    }
+
+    article{
+        padding: 0;
+    }
+
+    article a{
+        margin: 10px 0 30px;
+    }
+    
+    .container{
+        display: block;
+    }
+
+    main{
+        width: 100%;
+        padding: 0;
+    }
+
+    aside{
+        width: 100%;
+        padding: 0;
+    }
+
+    footer{
+        padding: 20px 20px 10px;
+        width: 100%;
+    }
+
+    .box{
+        display: block;
+        justify-content: space-between;
+    }
+
+    .menu{
+        flex: 1;
+        padding: 0;
+    }
+
+    .menu h3{
+        margin: 30px 0;
+    }
+
+    .menu p{
+        margin-bottom: 20px;
+    }
+
+    footer small{
+       margin-top: 10px;
+    }    
+}
